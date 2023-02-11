@@ -15,6 +15,12 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@ash-js/tsconfig@workspace:*, @ash-js/tsconfig@workspace:packages/tsconfig":
+  version: 0.0.0-use.local
+  resolution: "@ash-js/tsconfig@workspace:packages/tsconfig"
+  languageName: unknown
+  linkType: soft
+
 "@babel/code-frame@npm:7.12.11":
   version: 7.12.11
   resolution: "@babel/code-frame@npm:7.12.11"
@@ -1126,6 +1132,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "docs@workspace:apps/docs"
   dependencies:
+    "@ash-js/tsconfig": "workspace:*"
     "@babel/core": ^7.0.0
     "@types/node": ^17.0.12
     "@types/react": ^18.0.22
@@ -1135,7 +1142,6 @@ __metadata:
     next: ^13.1.1
     react: ^18.2.0
     react-dom: ^18.2.0
-    tsconfig: "workspace:*"
     typescript: ^4.5.3
   languageName: unknown
   linkType: soft
@@ -3465,12 +3471,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tsconfig@workspace:*, tsconfig@workspace:packages/tsconfig":
-  version: 0.0.0-use.local
-  resolution: "tsconfig@workspace:packages/tsconfig"
-  languageName: unknown
-  linkType: soft
-
 "tslib@npm:^1.8.1":
   version: 1.14.1
   resolution: "tslib@npm:1.14.1"
@@ -3667,6 +3667,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "web@workspace:apps/web"
   dependencies:
+    "@ash-js/tsconfig": "workspace:*"
     "@babel/core": ^7.0.0
     "@types/node": ^17.0.12
     "@types/react": ^18.0.22
@@ -3676,7 +3677,6 @@ __metadata:
     next: ^13.1.1
     react: ^18.2.0
     react-dom: ^18.2.0
-    tsconfig: "workspace:*"
     typescript: ^4.5.3
   languageName: unknown
   linkType: soft
