@@ -517,15 +517,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:^17.0.11":
-  version: 17.0.18
-  resolution: "@types/react-dom@npm:17.0.18"
-  dependencies:
-    "@types/react": ^17
-  checksum: b74525b1a13a0e27fe20859ff7a7e8f7e4581fb9d45ed1b6447ad1534d86f813818353c39d0df2e28f9d2b9be2e3af1908c244b2214a979393d19f217665e614
-  languageName: node
-  linkType: hard
-
 "@types/react-dom@npm:^18.0.7":
   version: 18.0.10
   resolution: "@types/react-dom@npm:18.0.10"
@@ -543,17 +534,6 @@ __metadata:
     "@types/scheduler": "*"
     csstype: ^3.0.2
   checksum: 600fdbc39a92ea4a77047db3e12f05f67776a710f5918248c0189a59ac2a38900c9db5a5d2e433a16df528a3ecab1aa114b322cacea573bb1ca2fc0b094c52d1
-  languageName: node
-  linkType: hard
-
-"@types/react@npm:^17, @types/react@npm:^17.0.37":
-  version: 17.0.53
-  resolution: "@types/react@npm:17.0.53"
-  dependencies:
-    "@types/prop-types": "*"
-    "@types/scheduler": "*"
-    csstype: ^3.0.2
-  checksum: dacfde02c260fd98bed2eb775ed0c7ce1397be4c0844f907a50763b081a4008f81f57071889a16eb1350ddcf0927f3cf1a6541702c8ad03de3c70383ef931e3f
   languageName: node
   linkType: hard
 
@@ -812,7 +792,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "ash-js@workspace:."
   dependencies:
-    eslint-config-custom: "workspace:*"
+    eslint-config-ashjs: "workspace:*"
     husky: ^8.0.3
     lint-staged: ^13.1.1
     prettier: 2.8.4
@@ -1151,13 +1131,12 @@ __metadata:
     "@types/react": ^18.0.22
     "@types/react-dom": ^18.0.7
     eslint: 7.32.0
-    eslint-config-custom: "*"
+    eslint-config-ashjs: "workspace:*"
     next: ^13.1.1
     react: ^18.2.0
     react-dom: ^18.2.0
-    tsconfig: "*"
+    tsconfig: "workspace:*"
     typescript: ^4.5.3
-    ui: "*"
   languageName: unknown
   linkType: soft
 
@@ -1326,9 +1305,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-custom@*, eslint-config-custom@workspace:*, eslint-config-custom@workspace:packages/eslint-config-custom":
+"eslint-config-ashjs@workspace:*, eslint-config-ashjs@workspace:packages/eslint-config-ashjs":
   version: 0.0.0-use.local
-  resolution: "eslint-config-custom@workspace:packages/eslint-config-custom"
+  resolution: "eslint-config-ashjs@workspace:packages/eslint-config-ashjs"
   dependencies:
     eslint: ^7.23.0
     eslint-config-next: 13.0.0
@@ -1581,7 +1560,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:7.32.0, eslint@npm:^7.23.0, eslint@npm:^7.32.0":
+"eslint@npm:7.32.0, eslint@npm:^7.23.0":
   version: 7.32.0
   resolution: "eslint@npm:7.32.0"
   dependencies:
@@ -3486,7 +3465,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tsconfig@*, tsconfig@workspace:packages/tsconfig":
+"tsconfig@workspace:*, tsconfig@workspace:packages/tsconfig":
   version: 0.0.0-use.local
   resolution: "tsconfig@workspace:packages/tsconfig"
   languageName: unknown
@@ -3622,7 +3601,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:^4.5.2, typescript@npm:^4.5.3, typescript@npm:^4.7.4":
+"typescript@npm:^4.5.3, typescript@npm:^4.7.4":
   version: 4.9.5
   resolution: "typescript@npm:4.9.5"
   bin:
@@ -3632,7 +3611,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@^4.5.2#~builtin<compat/typescript>, typescript@patch:typescript@^4.5.3#~builtin<compat/typescript>, typescript@patch:typescript@^4.7.4#~builtin<compat/typescript>":
+"typescript@patch:typescript@^4.5.3#~builtin<compat/typescript>, typescript@patch:typescript@^4.7.4#~builtin<compat/typescript>":
   version: 4.9.5
   resolution: "typescript@patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=23ec76"
   bin:
@@ -3641,20 +3620,6 @@ __metadata:
   checksum: ab417a2f398380c90a6cf5a5f74badd17866adf57f1165617d6a551f059c3ba0a3e4da0d147b3ac5681db9ac76a303c5876394b13b3de75fdd5b1eaa06181c9d
   languageName: node
   linkType: hard
-
-"ui@*, ui@workspace:packages/ui":
-  version: 0.0.0-use.local
-  resolution: "ui@workspace:packages/ui"
-  dependencies:
-    "@types/react": ^17.0.37
-    "@types/react-dom": ^17.0.11
-    eslint: ^7.32.0
-    eslint-config-custom: "*"
-    react: ^18.2.0
-    tsconfig: "*"
-    typescript: ^4.5.2
-  languageName: unknown
-  linkType: soft
 
 "unbox-primitive@npm:^1.0.2":
   version: 1.0.2
@@ -3707,13 +3672,12 @@ __metadata:
     "@types/react": ^18.0.22
     "@types/react-dom": ^18.0.7
     eslint: 7.32.0
-    eslint-config-custom: "*"
+    eslint-config-ashjs: "workspace:*"
     next: ^13.1.1
     react: ^18.2.0
     react-dom: ^18.2.0
-    tsconfig: "*"
+    tsconfig: "workspace:*"
     typescript: ^4.5.3
-    ui: "*"
   languageName: unknown
   linkType: soft
 
