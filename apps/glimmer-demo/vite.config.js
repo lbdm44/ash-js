@@ -1,5 +1,5 @@
 import { defineConfig } from "vite";
-import glimmer from "./vite-plugin-glimmer";
+import glimmer from "@ash-js/vite-plugin-glimmer";
 import babel from "vite-plugin-babel";
 import Inspect from "vite-plugin-inspect";
 

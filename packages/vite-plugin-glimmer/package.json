@@ -1,0 +1,18 @@
+{
+  "name": "@ash-js/vite-plugin-glimmer",
+  "version": "0.0.0",
+  "private": true,
+  "files": [
+    "base.json",
+    "nextjs.json"
+  ],
+  "type": "module",
+  "dependencies": {
+    "@babel/core": "^7.21.0",
+    "@glimmer/compiler": "^0.84.2",
+    "@glimmerx/babel-preset": "^0.6.8"
+  },
+  "volta": {
+    "extends": "../../package.json"
+  }
+}

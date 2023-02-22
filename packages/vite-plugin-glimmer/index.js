@@ -1,19 +1,20 @@
-import { readFileSync } from "fs";
-import { transform } from "@babel/core";
-import { precompile } from "@glimmer/compiler";
-import glimmerXPreset from "@glimmerx/babel-preset";
+import { readFileSync } from 'fs';
+import { transform } from '@babel/core';
+import { precompile } from '@glimmer/compiler';
+import glimmerXPreset from '@glimmerx/babel-preset';
+import { preprocessEmbeddedTemplates } from 'babel-plugin-htmlbars-inline-precompile';
+import { createRequire } from 'module';
 
-const {
-  preprocessEmbeddedTemplates,
-} = require("babel-plugin-htmlbars-inline-precompile");
-const getTemplateLocalsRequirePath = require.resolve("@glimmer/syntax");
+const require = createRequire(import.meta.url);
+
+const getTemplateLocalsRequirePath = require.resolve('@glimmer/syntax');
 
 const TEMPLATE_TAG_CONFIG = {
   getTemplateLocalsRequirePath,
-  getTemplateLocalsExportPath: "getTemplateLocals",
+  getTemplateLocalsExportPath: 'getTemplateLocals',
 
-  templateTag: "template",
-  templateTagReplacement: "GLIMMER_TEMPLATE",
+  templateTag: 'template',
+  templateTagReplacement: 'GLIMMER_TEMPLATE',
 
   includeSourceMaps: true,
   includeTemplateTokens: true,
@@ -21,10 +22,10 @@ const TEMPLATE_TAG_CONFIG = {
 
 const TEMPLATE_LITERAL_CONFIG = {
   getTemplateLocalsRequirePath,
-  getTemplateLocalsExportPath: "getTemplateLocals",
+  getTemplateLocalsExportPath: 'getTemplateLocals',
 
-  importIdentifier: "hbs",
-  importPath: "@glimmerx/component",
+  importIdentifier: 'hbs',
+  importPath: '@glimmerx/component',
 
   includeSourceMaps: true,
   includeTemplateTokens: true,
@@ -34,10 +35,10 @@ const fileRegex = /\.(gjs)$/;
 
 export default function glimmerPlugin() {
   return {
-    name: "glimmer-plugin",
+    name: 'glimmer-plugin',
     load(id) {
       if (id.match(/\.(js|ts)$/)) {
-        const source = readFileSync(id, "utf8");
+        const source = readFileSync(id, 'utf8');
 
         let { output } = preprocessEmbeddedTemplates(
           source,
@@ -49,7 +50,7 @@ export default function glimmerPlugin() {
           presets: [[glimmerXPreset, { __loadPlugins: true, precompile }]],
         });
       } else if (id.match(/\.(gjs|gts)$/)) {
-        const source = readFileSync(id, "utf8");
+        const source = readFileSync(id, 'utf8');
 
         let { output } = preprocessEmbeddedTemplates(
           source,
