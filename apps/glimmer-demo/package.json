@@ -3,7 +3,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "test": "echo \"This template does not include a test runner by default.\" && exit 1",
+    "test": "vitest",
     "deploy": "git push && git push --tags && npm publish",
     "format": "prettier --write \"src/**/*.js\"",
     "lint": "prettier --check \"src/**/*.js\""
