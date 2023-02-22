@@ -9,6 +9,7 @@
     "lint": "prettier --check \"src/**/*.js\""
   },
   "dependencies": {
+    "@ash-js/glimmer-router": "workspace:*",
     "@glimmer/syntax": "^0.84.2",
     "@glimmerx/compiler": "0.6.8",
     "@glimmerx/component": "0.6.8",

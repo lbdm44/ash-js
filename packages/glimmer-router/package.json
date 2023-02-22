@@ -1,0 +1,19 @@
+{
+  "name": "@ash-js/glimmer-router",
+  "version": "0.0.0",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc -p .",
+    "dev": "tsc -p . --watch"
+  },
+  "devDependencies": {
+    "@ash-js/tsconfig": "workspace:*",
+    "@glimmerx/core": "0.6.8",
+    "navigo": "^8.0.1",
+    "typescript": "^4.9.5"
+  },
+  "volta": {
+    "extends": "../../package.json"
+  }
+}
