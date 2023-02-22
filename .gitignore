@@ -20,6 +20,9 @@ build
 .vite-inspect
 dist
 
+# TypeScript
+lib
+
 # misc
 .DS_Store
 *.pem
