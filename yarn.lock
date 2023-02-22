@@ -22,9 +22,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@ash-js/glimmer-demo-app@workspace:apps/glimmer-app-demo":
+"@ash-js/glimmer-demo@workspace:apps/glimmer-demo":
   version: 0.0.0-use.local
-  resolution: "@ash-js/glimmer-demo-app@workspace:apps/glimmer-app-demo"
+  resolution: "@ash-js/glimmer-demo@workspace:apps/glimmer-demo"
   dependencies:
     "@babel/core": ^7.12.10
     "@babel/plugin-proposal-class-properties": ^7.12.1
