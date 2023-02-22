@@ -8,8 +8,10 @@
     "format": "prettier --write \"src/**/*.js\"",
     "lint": "prettier --check \"src/**/*.js\""
   },
+  "type": "module",
   "dependencies": {
     "@ash-js/glimmer-router": "workspace:*",
+    "@ash-js/vite-plugin-glimmer": "workspace:*",
     "@glimmer/syntax": "^0.84.2",
     "@glimmerx/compiler": "0.6.8",
     "@glimmerx/component": "0.6.8",
