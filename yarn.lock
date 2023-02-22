@@ -26,6 +26,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ash-js/glimmer-demo@workspace:apps/glimmer-demo"
   dependencies:
+    "@ash-js/vite-plugin-glimmer": "workspace:*"
     "@babel/core": ^7.12.10
     "@babel/plugin-proposal-class-properties": ^7.12.1
     "@babel/plugin-proposal-decorators": ^7.12.1
@@ -48,6 +49,16 @@ __metadata:
 "@ash-js/tsconfig@workspace:*, @ash-js/tsconfig@workspace:packages/tsconfig":
   version: 0.0.0-use.local
   resolution: "@ash-js/tsconfig@workspace:packages/tsconfig"
+  languageName: unknown
+  linkType: soft
+
+"@ash-js/vite-plugin-glimmer@workspace:*, @ash-js/vite-plugin-glimmer@workspace:packages/vite-plugin-glimmer":
+  version: 0.0.0-use.local
+  resolution: "@ash-js/vite-plugin-glimmer@workspace:packages/vite-plugin-glimmer"
+  dependencies:
+    "@babel/core": ^7.21.0
+    "@glimmer/compiler": ^0.84.2
+    "@glimmerx/babel-preset": ^0.6.8
   languageName: unknown
   linkType: soft
 
@@ -106,7 +117,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/core@npm:^7.12.0, @babel/core@npm:^7.12.10, @babel/core@npm:^7.3.4":
+"@babel/core@npm:^7.12.0, @babel/core@npm:^7.12.10, @babel/core@npm:^7.21.0, @babel/core@npm:^7.3.4":
   version: 7.21.0
   resolution: "@babel/core@npm:7.21.0"
   dependencies:
@@ -1738,6 +1749,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@glimmer/compiler@npm:^0.84.2":
+  version: 0.84.2
+  resolution: "@glimmer/compiler@npm:0.84.2"
+  dependencies:
+    "@glimmer/interfaces": 0.84.2
+    "@glimmer/syntax": 0.84.2
+    "@glimmer/util": 0.84.2
+    "@glimmer/wire-format": 0.84.2
+    "@simple-dom/interface": ^1.4.0
+  checksum: 66fba77cab02ad3dbe8256b0a17e17383bb00b6da70588ab28cceb27cc2655585f82f369dc795a61e43904b4350822e48e8bbb8c5d35f22cdd1974b51a5b7e04
+  languageName: node
+  linkType: hard
+
 "@glimmer/component@npm:2.0.0-beta.21":
   version: 2.0.0-beta.21
   resolution: "@glimmer/component@npm:2.0.0-beta.21"
@@ -1959,7 +1983,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@glimmer/syntax@npm:^0.84.2":
+"@glimmer/syntax@npm:0.84.2, @glimmer/syntax@npm:^0.84.2":
   version: 0.84.2
   resolution: "@glimmer/syntax@npm:0.84.2"
   dependencies:
@@ -2039,6 +2063,16 @@ __metadata:
     "@glimmer/interfaces": 0.84.0
     "@glimmer/util": 0.84.0
   checksum: 2aad53543d2a2b4e66714faa03845c271ffefd5894a74c09ce80a6c2ef2b528e3b8397b1aef7de9fd92dd510ad54b9c057ce834ae76a2a75905028ed58ddf181
+  languageName: node
+  linkType: hard
+
+"@glimmer/wire-format@npm:0.84.2":
+  version: 0.84.2
+  resolution: "@glimmer/wire-format@npm:0.84.2"
+  dependencies:
+    "@glimmer/interfaces": 0.84.2
+    "@glimmer/util": 0.84.2
+  checksum: bbf9d945c8ea25cf92943621063792c6a89c5028c37339b1367cc88841ce20dbcfa024f7d36c0bf6450188420c72d24496c6c4616b94f4a301bd1335afe7e1ab
   languageName: node
   linkType: hard
 

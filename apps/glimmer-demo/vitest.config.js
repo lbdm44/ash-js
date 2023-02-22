@@ -1,7 +1,7 @@
 /// <reference types="vitest" />
 import { defineConfig } from "vite";
 
-import glimmer from "./vite-plugin-glimmer";
+import glimmer from "@ash-js/vite-plugin-glimmer";
 
 export default defineConfig({
   plugins: [glimmer()],
