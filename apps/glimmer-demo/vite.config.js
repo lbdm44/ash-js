@@ -1,7 +1,7 @@
-import { defineConfig } from "vite";
-import glimmer from "@ash-js/vite-plugin-glimmer";
-import babel from "vite-plugin-babel";
-import Inspect from "vite-plugin-inspect";
+import { defineConfig } from 'vite';
+import glimmer from '@ash-js/vite-plugin-glimmer';
+import babel from 'vite-plugin-babel';
+import Inspect from 'vite-plugin-inspect';
 
 export default defineConfig({
   plugins: [
@@ -12,14 +12,14 @@ export default defineConfig({
         babelrc: false,
         configFile: false,
         plugins: [
-          ["@babel/plugin-proposal-decorators", { legacy: true }],
-          "@babel/plugin-proposal-class-properties",
+          ['@babel/plugin-proposal-decorators', { legacy: true }],
+          '@babel/plugin-proposal-class-properties',
         ],
       },
     }),
     Inspect({
       build: true,
-      outputDir: ".vite-inspect",
+      outputDir: '.vite-inspect',
     }),
   ],
 });
